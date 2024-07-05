@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              pink: "#E07B6E",
+              darkpink: "#C58D8C",
+              white: "#FFFFFF",
+              bluezz: "#364871",
+              darkgray: "#54586D",
+              gray: "#9C9AA7",
+              furina: "#7dd3fc",
+              sky: "#e0f2fe",
+              amber: "#fbbf24",
+              Agreen: "#84cc16",
+              Bgreen: "#4d7c0f",
+              Cgreen: "#bef264",
+              blackStone: "#fcd34d",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .video-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        z-index: -1;
+      }
+      .navbar {
+        position: relative;
+        z-index: 10;
+      }
+      section {
+        padding: 6rem 1rem;
+      }
+      
+    </style>
+</head>
+<body>
+  <div class="video-container">
+    <video autoplay loop muted class="object-cover w-full h-full opacity-80 ">
+      <source src="../dist/image/SnapSave.io-AOT Sea Live Wallpaper-(1080p60).mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <nav class="navbar bg-white p-7 border-b-2 border-sky">
+    <div class="font-medium lg:flex lg:items-center lg:justify-between">
+        <div class="text-2xl px-14 flex justify-between items-center ">
+            <div class="min-w-[200px]">
+                <span class="text-furina">Portfolio</span>
+            </div>
+            <span class="text-3xl cursor-pointer lg:hidden mx-2 block">
+                <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+            </span>
+        </div>
+    
+        <ul class="px-36 text-furina font-bold lg:flex lg:items-center z-[2] md:z-auto lg:static absolute bg-white w-full left-0 lg:w-auto lg:py-0 py-4 lg:pl-0 pl-16 lg:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500 ">
+            <li class="mx-7 my-6 sm:my-0 hover:text-bluezz"><a href="#About me" onclick="closeMenu()">ABOUT ME</a></li>
+            <li class="mx-7 my-6 sm:my-0 min-w-[82px] hover:text-bluezz"><a href="#education" onclick="closeMenu()">EDUCATION</a></li>
+            <li class="mx-7 my-6 sm:my-0 hover:text-bluezz"><a href="#activities" onclick="closeMenu()">ACTIVITIES</a></li>
+            <li class="mx-7 my-6 sm:my-0 hover:text-bluezz"><a href="#Expertise" onclick="closeMenu()">EXPERTISE</a></li>
+        </ul>
+        <script src="../PortFolio/index.js"></script>
+    </div>
+  </nav>
+
+  <section id="About me">
+    <div class="flex md:flex md:flex-row md:justify-around items-center justify-center py-16">
+      <span class="text-bold text-bluezz text-xl lg:text-6xl md:text-4xl sm:text-2xl flex flex-col gap-4 border border-furina p-4 bg-white  ">
+        <span class="hover:text-furina">Hi I'am Poovanart</span>
+        <span class="animate-pulse text-blue-600"><b>Game Developer</b></span> 
+        <span class="text-2xl hover:text-furina">
+          <b>This is my first portfolio website. Currently,<br> I am studying and practicing coding for web development. <br>I am trying to improve my skills in website coding and aspire <br>to become proficient in it</b>
+        </span>
+      </span>
+      <img class="md:w-[300px] lg:w-[500px] w-[200px] " src="../dist/image/autoCircle.png">
+    </div>
+  </section>
+
+  <section id="education">
+    <div class="flex md:flex md:flex-row md:justify-around items-center justify-center py-16">
+      <span class="text-bold text-bluezz text-xl lg:text-6xl md:text-4xl sm:text-2xl flex flex-col gap-4 border border-furina p-4 bg-white  ">
+        <span class="hover:text-furina">Education</span>
+        <span class="text-2xl hover:text-furina">
+          
+        </span>
+      </span>
+    </div>
+  </section>
+
+  <section id="activities">
+    <div class="flex md:flex md:flex-row md:justify-around items-center justify-center py-16">
+      <span class="text-bold text-bluezz text-xl lg:text-6xl md:text-4xl sm:text-2xl flex flex-col gap-4 border border-furina p-4  bg-white  ">
+        <span class="hover:text-furina">Activities</span>
+        <span class="text-2xl hover:text-furina">
+         
+        </span>
+      </span>
+    </div>
+  </section>
+
+  <section id="Expertise">
+    <div class="flex md:flex md:flex-row md:justify-around items-center justify-center py-16">
+      <span class="text-bold text-bluezz text-xl lg:text-6xl md:text-4xl sm:text-2xl flex flex-col gap-4 border border-furina p-4 bg-white  ">
+        <span class="hover:text-furina">Expertise</span>
+        <span class="text-2xl hover:text-furina">
+          
+        </span>
+      </span>
+    </div>
+    <div class="flex md:flex md:flex-row md:justify-around items-center justify-center py-16">
+      <span class="text-bold text-blue-600 animate-pulse text-xl lg:text-6xl md:text-4xl sm:text-2xl flex flex-col gap-4  p-4 bg-white  ">
+        <span class="hover:text-furina"> Web Developer</span>
+        <span class="text-2xl hover:text-furina">
+        </span>
+      </span>
+    </div>
+    <div class="flex md:flex md:flex-row  items-center justify-center py-16 "> 
+      <img class="md:w-[200px] lg:w-[400px] w-[100px] px-9" src="/dist/image/360_F_527977463_hcQAYoMqDE17JUYji9J9bVIV6CWMsFuG.png"> 
+      <img class="md:w-[200px] lg:w-[400px] w-[100px] px-9 " src="/dist/image/reactjs_logo_icon_170805.webp"> 
+      <img class="md:w-[200px] lg:w-[400px] w-[100px] px-9" src="/dist/image/tailwindcss_logo_icon_170649.webp">
+      <img class="md:w-[200px] lg:w-[400px] w-[100px] px-9" src="/dist/image/figma_logo_icon_171159.png">
+      <img class="md:w-[200px] lg:w-[400px] w-[100px] px-9" src="/dist/image/wordpress-logo-wordpress-icon-transparent-free-png.png">
+    </div>
+
+    <div class="flex md:flex md:flex-row md:justify-around items-center justify-center py-16">
+      <span class="text-bold text-blue-600 animate-pulse text-xl lg:text-6xl md:text-4xl sm:text-2xl flex flex-col gap-4  p-4 bg-white ">
+        <span class="hover:text-furina"> Programming Developer</span>
+        <span class="text-2xl hover:text-furina">
+        </span>
+      </span>
+    </div>
+    <div class="flex md:flex md:flex-row  items-center justify-center py-16 "> 
+      <img class="md:w-[200px] lg:w-[400px] w-[100px] px-16" src="/dist/image/Csharp_Logo.png"> 
+      <img class="md:w-[200px] lg:w-[250px] w-[100px] px-16" src="/dist/image/C_Logo.png"> 
+      <img class="md:w-[200px] lg:w-[250px] w-[100px] px-16" src="/dist/image/Python-logo-notext.svg.png">
+      <img class="md:w-[200px] lg:w-[400px] w-[100px] px-16" src="/dist/image/java-logo-41D4155FC3-seeklogo.com.png">
+    </div>> 
+
+    <div class="flex md:flex md:flex-row md:justify-around items-center justify-center py-16">
+      <span class="text-bold text-blue-600 animate-pulse text-xl lg:text-6xl md:text-4xl sm:text-2xl flex flex-col gap-4  p-4 bg-white  ">
+        <span class="hover:text-furina"> Game Developer</span>
+        <span class="text-2xl hover:text-furina">
+        </span>
+      </span>
+    </div>
+    <div class="flex md:flex md:flex-row  items-center justify-center py-16 "> 
+      <img class="md:w-[200px] lg:w-[400px] w-[100px] px-16" src="/dist/image/Unity-Logo.png"> 
+      <img class="md:w-[200px] lg:w-[500px] w-[100px] px-16" src="/dist/image/Unreal_Engine-Logo.wine.png"> 
+      <img class="md:w-[200px] lg:w-[400px] w-[100px] px-16" src="/dist/image/s-l400.png">
+      <img class="md:w-[200px] lg:w-[400px] w-[100px] px-16" src="/dist/image/iidroe6u835a1.png">
+    </div>> 
+
+    <div class="flex md:flex md:flex-row md:justify-around items-center justify-center py-16">
+      <span class="text-bold text-blue-600 animate-pulse text-xl lg:text-6xl md:text-4xl sm:text-2xl flex flex-col gap-4  p-4 bg-white  ">
+        <span class="hover:text-furina"> Mobile Developer</span>
+        <span class="text-2xl hover:text-furina">
+        </span>
+      </span>
+    </div>
+    <div class="flex md:flex md:flex-row  items-center justify-center py-16 "> 
+      <img class="md:w-[200px] lg:w-[400px] w-[100px] px-16" src="/dist/image/2560px-Xamarin-logo.svg.png"> 
+      <img class="md:w-[200px] lg:w-[500px] w-[100px] px-16" src="/dist/image/Google-flutter-logo.png"> 
+      <img class="md:w-[200px] lg:w-[400px] w-[100px] px-16" src="/dist/image/6364138a12ac6843f1c23412_flutterflow_logo_black.png">
+    </div>> 
+  </section>
+
+  <icon class="flex justify-center fixed bottom-4">
+    <a href="https://www.facebook.com/autoKingOFgamer/?locale=th_TH"><img class="w-16 mx-4 hover:animate-bounce" src="../dist/image/facebook.webp"></a>
+    <a href="https://www.instagram.com/to_hexoroz2/"><img class="w-16 mx-4 hover:animate-bounce" src="../dist/image/Instagram-Icon.png"></a>
+    <a href="https://github.com/auto2557"><img class="w-16 mx-4 hover:animate-bounce" src="../dist/image/icone-github-orange.png" ></a>
+  </icon>
+
+  <footer class="bg-white border-t-2 border-sky p-6 mt-16">
+    <div class="container mx-auto flex flex-col items-center justify-between md:flex-row">
+      <div class="text-center md:text-left mb-4 md:mb-0">
+        <span class="text-furina text-xl font-bold">Portfolio</span>
+        <p class="text-gray mt-2">© 2024 Poovanart. All rights reserved.</p>
+      </div>
+      
+    </div>
+  </footer>
+  
+</body>
+</html>
